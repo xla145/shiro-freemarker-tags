@@ -1,4 +1,4 @@
-package com.jagregory.shiro.freemarker;
+package com.yuelinghui.shiro.freemarker;
 
 import freemarker.core.Environment;
 import freemarker.template.*;
@@ -11,6 +11,8 @@ import java.util.Map;
  * <p>Equivalent to {@link org.apache.shiro.web.tags.SecureTag}</p>
  */
 public abstract class SecureTag implements TemplateDirectiveModel {
+
+
     public void execute(Environment env, Map params, TemplateModel[] loopVars, TemplateDirectiveBody body) throws TemplateException, IOException {
         verifyParameters(params);
         render(env, params, body);

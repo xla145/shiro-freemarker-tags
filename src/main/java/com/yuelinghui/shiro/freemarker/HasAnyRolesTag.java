@@ -16,7 +16,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package com.jagregory.shiro.freemarker;
+package com.yuelinghui.shiro.freemarker;
 
 import org.apache.shiro.subject.Subject;
 

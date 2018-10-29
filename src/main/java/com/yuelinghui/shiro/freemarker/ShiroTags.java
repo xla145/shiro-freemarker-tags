@@ -1,4 +1,4 @@
-package com.jagregory.shiro.freemarker;
+package com.yuelinghui.shiro.freemarker;
 
 import freemarker.template.SimpleHash;
 

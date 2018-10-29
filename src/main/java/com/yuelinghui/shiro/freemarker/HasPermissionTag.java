@@ -1,4 +1,4 @@
-package com.jagregory.shiro.freemarker;
+package com.yuelinghui.shiro.freemarker;
 
 /**
  * <p>Equivalent to {@link org.apache.shiro.web.tags.HasPermissionTag}</p>
@@ -6,6 +6,8 @@ package com.jagregory.shiro.freemarker;
  * @since 0.1
  */
 public class HasPermissionTag extends PermissionTag {
+
+    @Override
     protected boolean showTagBody(String p) {
         return isPermitted(p);
     }
