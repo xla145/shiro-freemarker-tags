@@ -1,4 +1,4 @@
-package com.yuelinghui.shiro.freemarker;
+package com.xula.shiro.freemarker;
 
 import freemarker.core.Environment;
 import freemarker.log.Logger;

@@ -1,4 +1,4 @@
-package com.yuelinghui.shiro.freemarker;
+package com.xula.shiro.freemarker;
 
 /**
  * <p>Equivalent to {@link org.apache.shiro.web.tags.LacksPermissionTag}</p>

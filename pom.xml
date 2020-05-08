@@ -23,20 +23,38 @@
     </dependencies>
 
     <repositories>
+        <!--阿里云仓库-->
+        <repository>
+            <id>aliyun</id>
+            <name>aliyun-maven</name>
+            <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+        </repository>
+        <!-- 阿里云spring仓库 -->
+        <repository>
+            <id>spring-milestones</id>
+            <name>Spring Milestones</name>
+            <url>https://maven.aliyun.com/repository/spring</url>
+        </repository>
+        <!-- 中央仓库 -->
         <repository>
             <id>central</id>
-            <name>Maven2 Repository</name>
-            <url>http://repo1.maven.org/maven2/</url>
+            <name>maven-central</name>
+            <url>http://central.maven.org/maven2/</url>
         </repository>
     </repositories>
 
     <!-- 配置部署构建到私服 -->
     <distributionManagement>
         <repository>
-            <id>yue-releases</id>
-            <name>yue-releases</name>
-            <url>http://192.168.1.6:8081/nexus/content/repositories/releases/</url>
+            <id>rdc-releases</id>
+            <url>https://repo.rdc.aliyun.com/repository/120621-release-HldziT/</url>
+            <name>rdc-releases</name>
         </repository>
+        <snapshotRepository>
+            <id>rdc-snapshots</id>
+            <url>https://repo.rdc.aliyun.com/repository/120621-snapshot-8OYdpv/</url>
+            <name>rdc-snapshots</name>
+        </snapshotRepository>
     </distributionManagement>
 
     <build>
