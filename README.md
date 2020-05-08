@@ -4,9 +4,11 @@
 
 ### 安装
 
-* 非maven方式引入
+* jar 方式引入
 
-下载 [dist/shiro-freemarker-tags-0.1-SNAPSHOT.jar](/jagregory/shiro-freemarker-tags/raw/master/dist/shiro-freemarker-tags-0.1-SNAPSHOT.jar) 文件，添加到对应的项目中
+下载 [shiro-freemarker-tags.jar](https://github.com/xla145/shiro-freemarker-tags/blob/1.0.0/dist/shiro-freemarker-tags-0.1-SNAPSHOT.jar) 文件，并在项目中引入jar
+
+![](https://img.mupaie.com/20200508165957.png)
 
 * maven方式
 
