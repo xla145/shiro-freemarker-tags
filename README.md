@@ -1,23 +1,45 @@
-# Apache Shiro tags for Freemarker
+# Apache Shiro 对于 Freemarker 自定义标签
 
-[Apache Shiro](http://shiro.apache.org/) comes with some [handy JSP tags](http://shiro.apache.org/jsp-tag-library.html) for doing things like only showing content for anonymous users, logged in users, etc... I'm using [Freemarker](http://freemarker.sourceforge.net/) and didn't want to take a dependency on JSP just for Shiro, so I rewrote the tags for Freemarker.
+[Apache Shiro](http://shiro.apache.org/) 自带了一些 [JSP标签](http://shiro.apache.org/jsp-tag-library.html)，用于做一些事情，比如只显示匿名用户、登录用户等内容。我正在使用 [Freemarker](http://freemarker.sourceforge.net/)，不想只为`Shiro`而依赖`JSP`，所以我重写了`Freemarker`的标签。
 
-## Install
+### 安装
 
-Either download the [dist/shiro-freemarker-tags-0.1-SNAPSHOT.jar](/jagregory/shiro-freemarker-tags/raw/master/dist/shiro-freemarker-tags-0.1-SNAPSHOT.jar) or take all the java files and stick them in your project. Simple.
+* 非maven方式引入
 
-If there's enough demand, I could put this up on Maven.
+下载 [dist/shiro-freemarker-tags-0.1-SNAPSHOT.jar](/jagregory/shiro-freemarker-tags/raw/master/dist/shiro-freemarker-tags-0.1-SNAPSHOT.jar) 文件，添加到对应的项目中
 
-## Usage
+* maven方式
 
-Declare a shared variable called "shiro", and assign it to an instance of the ShiroTags class.
+  ```
+  <dependency>
+      <groupId>com.xula</groupId>
+      <artifactId>shiro-freemarker-tags</artifactId>
+      <version>1.0.1</version>
+  </dependency>
+  ```
+  
+  由于上传的是个人私服，使用者需要在`pom` 文件下添加以下配置	
+  
+  ```
+  <repositories>
+      <repository>
+          <id>rdc-releases</id>
+          <url>https://repo.rdc.aliyun.com/repository/120621-release-HldziT/</url>
+          <name>rdc-releases</name>
+      </repository>
+  </repositories>
+  ```
+
+## 使用
+
+声明一个名为 `shiro `的共享变量，并将其分配给`ShiroTags`类的一个实例。
 
     cfg.setSharedVariable("shiro", new ShiroTags());
 
-You should then be able to use the tags in your Freemarker templates.
+在`Freemarker` 模板中使用标签
 
     <@shiro.guest>Hello guest!</@shiro.guest>
 
-## License
+## 注意
 
-Do what you want with it, just don't blame me if it breaks anything.
+如果在使用过程中出现 bug，请提交 issue

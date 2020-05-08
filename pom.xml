@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>shiro-freemarker-tags</artifactId>
-    <groupId>com.yuelinghui</groupId>
+    <groupId>com.xula</groupId>
     <version>1.0.1</version>
 
     <dependencies>
@@ -34,12 +34,6 @@
             <id>spring-milestones</id>
             <name>Spring Milestones</name>
             <url>https://maven.aliyun.com/repository/spring</url>
-        </repository>
-        <!-- 中央仓库 -->
-        <repository>
-            <id>central</id>
-            <name>maven-central</name>
-            <url>http://central.maven.org/maven2/</url>
         </repository>
     </repositories>
 
