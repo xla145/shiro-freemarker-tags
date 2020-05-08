@@ -8,7 +8,7 @@
 
 下载 [shiro-freemarker-tags.jar](https://github.com/xla145/shiro-freemarker-tags/blob/1.0.0/dist/shiro-freemarker-tags-0.1-SNAPSHOT.jar) 文件，并在项目中引入jar
 
-![](img\20200508165957.png)
+![](https://github.com/xla145/shiro-freemarker-tags/blob/1.0.0/img/20200508165957.png)
 
 * maven方式
 
